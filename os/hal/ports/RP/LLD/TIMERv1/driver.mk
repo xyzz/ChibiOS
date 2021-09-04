@@ -11,9 +11,9 @@ ifneq ($(findstring HAL_USE_PWM TRUE,$(HALCONF)),)
 PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_pwm_lld.c
 endif
 else
-PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_gpt_lld.c
-PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_icu_lld.c
-PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_pwm_lld.c
+# PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_gpt_lld.c
+# PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_icu_lld.c
+# PLATFORMSRC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1/hal_pwm_lld.c
 endif
 
 PLATFORMINC += $(CHIBIOS)/os/hal/ports/RP/LLD/TIMERv1
